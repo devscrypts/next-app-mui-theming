@@ -1,11 +1,9 @@
 "use client";
-import { Box, Button, useTheme } from "@mui/material";
+import { Box, Button } from "@mui/material";
 import useThemeToggle from "@/hooks/useThemeToggle";
-import { useCallback } from "react";
 
 const Home = function () {
   const { modeToggle, toggleColor } = useThemeToggle();
-  const theme = useTheme();
 
   const handleToggle = () => {
     modeToggle();
